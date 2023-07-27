@@ -2,7 +2,8 @@
 
 ### Micro-Blogger
 
-Welcome to the Microblogging project! This is a simple microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. The project allows users to create an account, post short messages and explore the latest posts from other people.
+Welcome to the Microblogging project! This is a simple microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. 
+This project was developed as a part of learning Flask and other related tech stacks. The project allows users to create an account, post short messages and explore the latest posts from other people.
 
 ### Screenshots
 * Sign In Page
