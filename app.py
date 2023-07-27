@@ -30,7 +30,6 @@ def create_app():
         @functools.wraps(route)
         def route_wrapper(*args, **kwargs):
             email = session.get("email")
-            print("Session Email:", email)
             users = {user.get("email"): user.get("password") for user in app.db.users.find({})}
             if email not in users:
                 return redirect(url_for("login"))
@@ -52,7 +51,6 @@ def create_app():
             password = request.form.get("password")
             
             users = {user.get("email"): user.get("password") for user in app.db.users.find({})}
-            print(users)
             
             # if email in users and users.get(email) == password:
             if email in users:
