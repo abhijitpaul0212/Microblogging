@@ -35,6 +35,16 @@ Python (version 3.6 or higher)
 MongoDB
 Flask
 
+### Screenshots
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/71366d19-3cac-4d09-ab40-366883871a4e)
+
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/c1b05d77-90cd-4875-87fc-581021756dfa)
+
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/0a08dc36-f458-480b-94dd-2cae22342d7e)
+
+
+
+
 ### License
 
 This project is licensed under the MIT License.
