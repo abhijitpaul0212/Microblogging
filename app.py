@@ -1,5 +1,5 @@
-import datetime
 import os
+import datetime
 import functools
 
 from flask import (
@@ -12,6 +12,7 @@ from flask import (
     redirect,
     url_for
 )
+
 from pymongo import MongoClient
 from dotenv import load_dotenv
 from passlib.hash import pbkdf2_sha256
@@ -98,6 +99,3 @@ def create_app():
         else:  
             return '<p>user already logged out</p>'  
     return app
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
