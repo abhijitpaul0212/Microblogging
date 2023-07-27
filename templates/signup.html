@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid bg" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <form class="form-container" method="post">
+                    <h1 class="text-white">Create Account</h1>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputEmail1" class="form-label">Email</label> -->
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-large">Sign Up</button>
+                </form>
+                <p class="text-white signup">Already signed up? <a href="{{ url_for('login') }}">Log In</a></p>
+                <div>
+                    {% for message in get_flashed_messages() %}
+                        <div class="alert text-white">
+                        <p>{{ message }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>
+
+
+    <!-- <form method="post">
+        <label>
+            EMAIL: 
+            <input type="email" name="email">
+        </label>
+        <label>
+            PASSWORD:
+            <input type="password" name="password">
+        </label>
+        <input type="submit" value="Sign Up"/>
+    </form>
+    <p><a href="{{ url_for('login') }}">Log In</a> instead</p> -->
+{% endblock %}

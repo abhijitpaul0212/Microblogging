@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid bg" >
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <!-- start form -->
+                <form class="form-container" method="post">
+                    <h2 class="text-white form-container--title">Welcome to Micro-Blogger</h2>
+                    <br/>
+                    <br/>
+                    <h3 class="text-white">Sign In</h1>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputEmail1" class="form-label">Email</label> -->
+                        <input type="email" name="email" value="{{ email }}" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-large">Submit</button>
+                </form>
+                <!-- end form -->
+                <p class="text-white signup">Account Not Created? <a href="{{ url_for('signup') }}">Sign Up</a></p>
+
+                <div>
+                    {% for message in get_flashed_messages() %}
+                        <div class="alert text-white">
+                        <p>{{ message }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>   
+{% endblock %}

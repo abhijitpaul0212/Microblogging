@@ -1,64 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microblog</title>
-    <link rel="stylesheet" href="../static/css/styles.css"/>
-</head>
-<body>
-    <header class="navbar">
-        <div class="navbar__brand">
-            <img class="navbar__logo" src="../static/logo.svg" alt="The Microblog Logo" />Microblog
-        </div>
-        <ul class="navbar__navigation">
-            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
-            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
-        </ul>
-    </header>
+{% extends "base.html" %}
+
+{% block content %}
     <main class="main">
         <section>
-            <h1>Add new entry</h1>
-            <form class="form" action="/" method="POST">
-                <p class="form__input">
-                    <label for="entry" class="form__label">Entry contents:</label>
-                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
-                </p>
-                <button type="submit" class="form__submit">Add entry</button>
-            </form>
-        </section>
-        <section>
-            <h1>Recent posts</h1>
+            <h1>Trending posts</h1>
             {% for entry in entries %}
             <article class="entry">
                 <div>
-                    <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h2>
-                    <time class="entry__date" datetime="{{ entry[1] }}">{{ entry[2] }}</time>
+                    <h2 class="entry__title">{{ entry[0] }}</h2>
+                    <time class="entry__date" datetime="{{ entry[1] }}">{{ entry[3] }}</time>
                 </div>
                 <p class="entry__content">
-                    {{ entry[0] }}
+                    {{ entry[1] }}
                 </p>
             </article>
             {% endfor %}
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__content">
-            <section class="left">
-                <a class="footer__item">Made by Abhijit Paul</a>
-                <a class="footer__item">Check out my other projects</a>
-            </section>
-            <section class="right">
-                <div class="footer__column">
-                    <a class="footer__item">Recent</a>
-                    <a class="footer__item">Calendar</a>
-                </div>
-                <div class="footer__column">
-                    <a class="footer__item">About</a>
-                    <a class="footer__item">How this was made</a>
-                </div>                
-            </section>
-        </div>
-    </footer>
-</body>
-</html>
+{% endblock %}

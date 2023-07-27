@@ -1,4 +1,6 @@
 flask
 python-dotenv
+pymongo
 pymongo[srv]
+passlib
 gunicorn

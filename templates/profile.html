@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="main">
+        <section>
+            <!-- <h2>Add new post</h2> -->
+            <form class="form" action="/profile" method="POST">
+                <p class="form__input">
+                    <!-- <label for="entry" class="form__label">Entry contents:</label> -->
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents" placeholder="What's happening?"></textarea>
+                </p>
+                <button type="submit" class="form__submit">Post</button>
+            </form>
+        </section>
+        <section>
+            <h2>Recent posts</h2>
+            {% for entry in entries %}
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">{{ entry[0] }}</h2>
+                    <time class="entry__date" datetime="{{ entry[1] }}">{{ entry[3] }}</time>
+                </div>
+                <p class="entry__content">
+                    {{ entry[1] }}
+                </p>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+{% endblock %}
