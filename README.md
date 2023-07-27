@@ -4,6 +4,16 @@
 
 Welcome to the Microblogging project! This is a simple microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. The project allows users to create an account, post short messages and explore the latest posts from other people.
 
+### Screenshots
+* Sign In Page
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/71366d19-3cac-4d09-ab40-366883871a4e)
+
+* User's Profile Page
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/1678257d-bf0b-4f3a-a139-71576da09624)
+
+* Dashboard Page
+![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/0972e106-bfbe-4d71-b0a8-87c55b348de2)
+
 ### Features
 
 #### SignUp Module
@@ -34,16 +44,6 @@ Before running the application, ensure you have the following installed:
 Python (version 3.6 or higher)
 MongoDB
 Flask
-
-### Screenshots
-![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/71366d19-3cac-4d09-ab40-366883871a4e)
-
-![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/c1b05d77-90cd-4875-87fc-581021756dfa)
-
-![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/0a08dc36-f458-480b-94dd-2cae22342d7e)
-
-
-
 
 ### License
 
