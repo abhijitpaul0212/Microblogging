@@ -5,6 +5,8 @@
 Welcome to the Microblogging project! This is a simple microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. 
 This project was developed as a part of learning Flask and other related tech stacks. The project allows users to create an account, post short messages and explore the latest posts from other people.
 
+Password Hashing used for Authentication and Authorization
+
 ### Screenshots
 * Sign In Page
 ![image](https://github.com/abhijitpaul0212/Microblog/assets/9966441/71366d19-3cac-4d09-ab40-366883871a4e)
