@@ -7,7 +7,7 @@
     </div>
     <ul class="navbar__navigation">
         <li class="navbar__navigation-item"><a href="{{url_for('home')}}" class="navbar__link">Home</a></li>
-        <li class="navbar__navigation-item"><a href="{{url_for('profile')}}" class="navbar__link">My Profile</a></li>
+        <li class="navbar__navigation-item"><a href="{{url_for('profile')}}" class="navbar__link">{{ email }}</a></li>
         <li class="navbar__navigation-item"><a href="{{url_for('signout')}}" class="navbar__link">Sign Out</a></li>
     </ul>
 </header>

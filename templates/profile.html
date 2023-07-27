@@ -7,9 +7,11 @@
             <form class="form" action="/profile" method="POST">
                 <p class="form__input">
                     <!-- <label for="entry" class="form__label">Entry contents:</label> -->
-                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents" placeholder="What's happening?"></textarea>
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents" placeholder="What's happening?" maxlength="160" rows="5" required></textarea>
+                    <span class="pull-right label label-default" id="count_message"></span>
+                    <br>
                 </p>
-                <button type="submit" class="form__submit">Post</button>
+                <button type="submit" class="form__submit btn btn-info">Post New Message</button>
             </form>
         </section>
         <section>

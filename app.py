@@ -41,7 +41,7 @@ def create_app():
     def home():
         entries_with_date = [(entry.get("email"), entry.get("content"), entry.get("date"), datetime.datetime.strptime(entry.get("date"), "%Y-%m-%d").strftime("%b %d")) for entry in app.db.entries.find({})]
         entries_with_date.reverse()
-        return render_template("home.html", entries=entries_with_date)
+        return render_template("home.html", entries=entries_with_date, email=session.get("email"))
 
     @app.route('/', methods=["GET", "POST"])
     def login():
@@ -88,7 +88,7 @@ def create_app():
         
         entries_with_date = [(entry.get("email"), entry.get("content"), entry.get("date"), datetime.datetime.strptime(entry.get("date"), "%Y-%m-%d").strftime("%b %d")) for entry in app.db.entries.find({'email': session.get("email")})]
         entries_with_date.reverse()
-        return render_template("profile.html", entries=entries_with_date)
+        return render_template("profile.html", entries=entries_with_date, email=session.get("email"))
 
     @app.route("/signout")
     def signout():
