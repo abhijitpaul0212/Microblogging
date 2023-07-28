@@ -64,4 +64,10 @@ This project is licensed under the MIT License.
 
 If you have any questions or suggestions, feel free to contact us at abhijitpaul0212@gmail.com.
 
+### Resources
+1. Bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/ | https://getbootstrap.com/docs/4.3/getting-started/introduction/
+2. https://python-web.teclado.com/
+3. Flask: https://flask.palletsprojects.com/en/2.3.x/quickstart/#hooking-in-wsgi-middleware
+4. Jinja2: https://jinja.palletsprojects.com/en/3.0.x/templates/
+
 Happy Microblogging!
