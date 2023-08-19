@@ -1,9 +1,12 @@
-## Microblogging Project
+## Microblogging Website
 
 ### Micro-Blogger
 
-Welcome to the Microblogging project! This is a simple microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. 
+Welcome to the Microblogging project! This is a mini microblogging platform built using Bootstrap HTML, CSS, Flask, and MongoDB. 
 This project was developed as a part of learning Flask and other related tech stacks. The project allows users to create an account, post short messages and explore the latest posts from other people.
+
+### Live
+Render: https://microblog-igaj.onrender.com/
 
 ### Learnings
 1. `passlib` library is used for Password Hashing --Authentication and Authorization--
