@@ -73,4 +73,7 @@ If you have any questions or suggestions, feel free to contact us at abhijitpaul
 3. Flask: https://flask.palletsprojects.com/en/2.3.x/quickstart/#hooking-in-wsgi-middleware
 4. Jinja2: https://jinja.palletsprojects.com/en/3.0.x/templates/
 
+### Note
+Dummy Username: a@gmail.com | Password: 12345
+
 Happy Microblogging!
